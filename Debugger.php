@@ -78,6 +78,7 @@ class Debugger {
         $bottombar.='<span>Memory Usage: '.$this->getmemoryusage().'</span>';
         $bottombar.='<span>Execution Time: '.$this->getelapsedtime().' Seconds</span>';
         $bottombar.='<a href="#" onClick="window.location.reload(); return false;">&#11119 Reload Page</a>';
+        $bottombar.='<a href="#" onClick="window.location.reload(); return false;">&#11119 Reload Page</a>';
         $bottombar.='</div>';
         echo $bottombar;
         
