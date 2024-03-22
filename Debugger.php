@@ -7,12 +7,16 @@ Version : v0.0001
 */
 class Debugger {
     var $ci;
-    var $debug=TRUE;
+    var $debug=FALSE;
 
     function __construct() {
         $this->ci =& get_instance();
         $this->ci->benchmark->mark("default_start");
+        if(defined('CI_DEBUGGER') && CI_DEBUGGER===TRUE){
+            $this->debug=TRUE;
+        }
     }
+
 
     function getelapsedtime($start="default_start",$end="default_end") {
         if($end=="default_end"){
