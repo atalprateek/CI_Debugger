@@ -1,4 +1,10 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php  
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/*
+Name : Debugger
+Description : Debugger for Codeigniter
+Version : v0.0001
+*/
 class Debugger {
     var $ci;
     var $debug=TRUE;
